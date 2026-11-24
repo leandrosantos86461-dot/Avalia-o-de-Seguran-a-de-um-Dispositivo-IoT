@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "NexaHome - laboratorio educacional",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -110, "left": 220, "attrs": { "temperature": "24.5", "humidity": "56" } },
+    { "type": "wokwi-led", "id": "ledRed", "top": 95, "left": 260, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "ledGreen", "top": 155, "left": 260, "attrs": { "color": "green" } },
+    { "type": "wokwi-resistor", "id": "rRed", "top": 100, "left": 350, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "rGreen", "top": 160, "left": 350, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-pushbutton", "id": "btn", "top": 230, "left": 235, "attrs": { "color": "blue", "label": "ANTES / DEPOIS" } }
+  ],
+  "connections": [
+    ["esp:3V3", "dht:VCC", "red", []],
+    ["esp:GND.1", "dht:GND", "black", []],
+    ["esp:D15", "dht:SDA", "green", []],
+    ["esp:D19", "ledRed:A", "red", []],
+    ["ledRed:C", "rRed:1", "black", []],
+    ["rRed:2", "esp:GND.2", "black", []],
+    ["esp:D18", "ledGreen:A", "green", []],
+    ["ledGreen:C", "rGreen:1", "black", []],
+    ["rGreen:2", "esp:GND.2", "black", []],
+    ["esp:D21", "btn:1.l", "blue", []],
+    ["esp:GND.2", "btn:2.l", "black", []]
+  ],
+  "dependencies": {}
+}
