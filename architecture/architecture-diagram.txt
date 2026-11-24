@@ -1,0 +1,13 @@
+[Sensor temperatura/umidade - simulado]
+                 |
+        [ESP32 - arquitetura proposta]
+        | Firmware | Flash | UART/JTAG*
+                 |
+               Wi-Fi*
+                 |
+        [Rede de laboratorio*]
+                 |
+         [MQTT/HTTP local*]
+
+* Componentes conceituais, nao implementados
+  nesta simulacao Python.

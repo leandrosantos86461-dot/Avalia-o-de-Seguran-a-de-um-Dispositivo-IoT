@@ -1,0 +1,6 @@
+Comando: python src/testes.py
+Codigo de saida: 0
+
+OK: analisar_firmware.py
+OK: laboratorio.py
+TODOS OS TESTES PASSARAM

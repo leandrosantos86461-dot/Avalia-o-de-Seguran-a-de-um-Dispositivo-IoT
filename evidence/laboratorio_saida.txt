@@ -1,0 +1,11 @@
+Comando: python src/laboratorio.py
+Codigo de saida: 0
+
+=== CENARIO 1: exposicao de telemetria em texto claro ===
+Payload visivel: {"dispositivo": "NexaSense-LAB-01", "temperatura": 24.5, "umidade": 56}
+Risco: dados podem ser lidos em um canal sem protecao.
+=== CENARIO 2: verificacao de integridade ===
+Assinatura HMAC: 3fb6d307c008ac2ade3352cc8f98fe71a0525fdfdec6935cc7107720fb5643fc
+Integridade valida: True
+Mensagem alterada valida: False
+NOTA: HMAC nao criptografa. Em producao, usar TLS.
