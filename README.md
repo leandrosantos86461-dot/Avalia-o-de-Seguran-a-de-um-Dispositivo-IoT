@@ -1,1 +1,5 @@
-# Avalia-o-de-Seguran-a-de-um-Dispositivo-IoT
+# Avaliação-de-Segurança-de-um-Dispositivo-IoT
+
+    **EXPLICAÇÃO**
+https://youtu.be/e_XiCnqNrvs
+
